@@ -18,3 +18,4 @@ fr2 = open("room2.txt", "a")
 fr2.write(fr1.read())
 fr1.close()
 fr2.close()
+
