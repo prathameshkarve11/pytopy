@@ -1,5 +1,5 @@
 import numpy as np
-
+### written this com from github to fetch this in envirment
 ## numpy installled 
 
 ### first array with numpy
