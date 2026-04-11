@@ -1,0 +1,89 @@
+PRACTICAL PYTHON + OOP + NUMPY + PANDAS + MATPLOTLIB GUIDE
+
+==================== PYTHON OOP ====================
+
+class ClassName: def init(self, param1, param2): self.param1 = param1
+self.param2 = param2
+
+Explanation: init(self, …) → constructor (runs when object is created)
+self → current object reference
+
+Object creation: obj = ClassName(val1, val2)
+
+Methods: def method(self, arg): pass
+
+Encapsulation: self.__var = value → private variable
+
+Getter: def get_var(self): return self.__var
+
+Setter: def set_var(self, val): self.__var = val
+
+Inheritance: class Child(Parent): def init(self): super().__init__()
+
+==================== PYTHON BUILT-IN ====================
+
+print(*objects, sep=’ ‘, end=’’) → prints output objects = values sep =
+separator end = ending
+
+input(prompt) → user input
+
+len(obj) → number of items
+
+type(obj) → data type
+
+range(start, stop, step) → number sequence
+
+==================== NUMPY ====================
+
+np.array(data) → create array
+
+np.arange(start, stop, step) → range array
+
+np.linspace(start, stop, num) → evenly spaced values
+
+arr.shape → dimensions arr.reshape(r, c) → reshape arr.size → total
+elements
+
+np.sum(arr, axis=None) axis=0 → column axis=1 → row
+
+np.mean(arr) np.max(arr) np.min(arr)
+
+np.dot(a, b) → matrix multiplication
+
+==================== PANDAS ====================
+
+pd.read_csv(filepath) 
+pd.read_json(filepath)
+pd.read_excel(filepath)
+
+df.head(n=5) 
+df.tail(n=5) 
+df.sample(n=5)
+
+df[“col”] 
+df[[“c1”,“c2”]]
+
+df.iloc[row, col] 
+df.loc[label]
+
+df.isnull() df.dropna() df.fillna(value)
+
+df[“new”] = df[“old”] * 2
+
+df.groupby(“col”).mean()
+
+df.sort_values(“col”, ascending=True)
+
+==================== MATPLOTLIB ====================
+
+plt.plot(x, y) plt.scatter(x, y) plt.bar(x, y) plt.hist(data, bins=10)
+
+plt.xlabel(“X”) plt.ylabel(“Y”) plt.title(“Title”)
+
+plt.legend() plt.grid() plt.show()
+
+==================== HOW TO THINK ====================
+
+type(x) → check type dir(x) → see methods help(x) → read docs
+
+Use: NumPy → math Pandas → data Matplotlib → graphs
